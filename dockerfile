@@ -4,8 +4,8 @@ run pip install virtualenv
 ENV VIRTUAL_ENV = /venv 
 run virtualenv venv -p python3 
 
-WORKDIR .
-ADD . .
+WORKDIR /app
+ADD . /app
 
 run pip install -r requirements.txt 
 
