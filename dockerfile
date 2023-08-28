@@ -1,8 +1,9 @@
 from python:3.7
+RUN pip install --upgrade pip
 
 run pip install virtualenv
 ENV VIRTUAL_ENV = /venv 
-run virtualenv venv -p python3 
+run virtualenv venv 
 
 WORKDIR /app
 ADD . /app
