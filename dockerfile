@@ -1,4 +1,4 @@
-from python:3.7
+from python:3.10.8
 RUN pip install --upgrade pip
 
 run pip install virtualenv
